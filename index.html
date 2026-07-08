@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRAKO(R) -- Streetwear Haute-Couture Francais</title>
+<meta name="description" content="BRAKO -- marque francaise de streetwear haute-couture. Hoodies, t-shirts, shorts mohair et accessoires en edition limitee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo">BRAK<span>O</span>&reg;</a>
+    <nav class="nav-links">
+      <a href="#boutique">Boutique</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#about">La marque</a>
+      <a href="#newsletter">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn">Panier<span class="cart-count" id="cart-count">0</span></button>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="#boutique">Boutique</a>
+  <a href="#lookbook">Lookbook</a>
+  <a href="#about">La marque</a>
+  <a href="#newsletter">Contact</a>
+</nav>
+
+<section id="hero">
+  <div id="hero-slides"></div>
+  <div class="hero-dots" id="hero-dots"></div>
+  <div class="scroll-cue"></div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>STREETWEAR</span><span>HAUTE-COUTURE</span><span>FUTURISTE</span>
+    <span>MARQUE FRANCAISE</span><span>EDITIONS LIMITEES</span>
+    <span>STREETWEAR</span><span>HAUTE-COUTURE</span><span>FUTURISTE</span>
+    <span>MARQUE FRANCAISE</span><span>EDITIONS LIMITEES</span>
+  </div>
+</div>
+
+<section id="boutique">
+  <div class="container">
+    <span class="section-label">La collection</span>
+    <div class="shop-head">
+      <h2 class="section-title">Boutique</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="tous">Tous</button>
+        <button class="filter-btn" data-filter="hauts">Hauts</button>
+        <button class="filter-btn" data-filter="bas">Bas</button>
+        <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+      </div>
+    </div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </div>
+</section>
+
+<section id="lookbook">
+  <div class="container">
+    <span class="section-label">Lookbook</span>
+    <h2 class="section-title">Sur le terrain</h2>
+    <div class="lookbook-grid" id="lookbook-grid"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <span class="section-label">La marque</span>
+      <h2 class="section-title">Nee de la nuit,<br>faconnee en France</h2>
+      <p><strong>BRAKO(R)</strong> est une marque francaise de vetements qui fusionne le streetwear brut, l'exigence de la haute-couture et une esthetique futuriste. Chaque piece est pensee comme un manifeste : matieres nobles, coupes oversize, graphismes signes.</p>
+      <p>Nee dans les rues et les stations essence la nuit, la marque puise son inspiration dans une France urbaine, contrastee, entre luxe discret et energie de la rue.</p>
+      <div class="about-stats">
+        <div class="about-stat"><b>100%</b><span>Design francais</span></div>
+        <div class="about-stat"><b>Ltd</b><span>Editions limitees</span></div>
+        <div class="about-stat"><b>2024</b><span>Depuis</span></div>
+      </div>
+    </div>
+    <div class="about-media">
+      <img src="assets/images/hero-brako-03.jpg" alt="BRAKO lifestyle">
+    </div>
+  </div>
+</section>
+
+<section id="newsletter">
+  <div class="container">
+    <span class="section-label">Restez connecte</span>
+    <h2 class="section-title">Ne manquez<br>aucun drop</h2>
+    <form class="newsletter-form" id="newsletter-form">
+      <input type="email" placeholder="Votre adresse email" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>BRAKO(R)</h4>
+        <p style="color:var(--fg-dim);font-size:.9rem;max-width:320px;">Marque francaise de streetwear haute-couture, entre nuit urbaine et futurisme.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#boutique">Boutique</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#about">La marque</a>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <a href="https://www.instagram.com/brakocouture/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> BRAKO(R). Tous droits reserves.</span>
+      <span>Site en cours de reconstruction -- maquette</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+
+<script src="assets/data/products.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
